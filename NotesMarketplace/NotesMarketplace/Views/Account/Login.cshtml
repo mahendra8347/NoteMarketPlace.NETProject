@@ -1,0 +1,99 @@
+﻿@model NotesMarketplace.Models.UserLogin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!-- title -->
+    <title>Notes Marketplace</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/Content/Front/images/homepage/favicon.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="~/Content/Front/css/font-awesome/font-awesome.min.css">
+    <!-- Bootstrap Css    -->
+    <link rel="stylesheet" href="~/Content/Front/css/bootstrap/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/Content/Front/css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/Content/Front/css/responsive.css">
+
+</head>
+<body>
+    <div class="limiter">
+        <div class="container-box">
+            <div class="form-warp">
+                <div id="site-logo" class="text-center">
+                    <img src="~/Content/Front/images/login/top-logo.png" class="img-responsive" alt="top-logo">
+                </div>
+                <div id="form-wrapper" class="form-general">
+                    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <h3 class="text-center">Login</h3>
+                        <p class="text-center">Enter your email address and password to login</p>
+                        if (@TempData["Error"] != null)
+                        {
+                            <h6 class="text-danger">@TempData["Error"]</h6>
+                        }
+                        if (@TempData["Message"] != null)
+                        {
+                            <h6 class="text-success">@TempData["Message"]</h6>
+                        }
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            @Html.TextBoxFor(x => x.EmailID, new { @class = "form-control", @placeholder = "Enter Your EmailID" })
+                            @Html.ValidationMessageFor(model => model.EmailID, "", new { @class = "text-danger erroemessage" })
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label><a href="/account/forgotpassword">Forgor Password?</a>
+                            @Html.PasswordFor(x => x.Password, new { id = "exampleInputPassword1", @class = "form-control", @placeholder = "Enter Your Password" })
+                            <span toggle="#password-field" id="toggle-password" class="toggle-password"><img src="~/Content/Front/images/login/eye.png" alt="toggle-password"></span>
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger erroemessage" })
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    @Html.CheckBoxFor(x => x.RememberMe)
+                                    <label>
+                                        Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-general">LOGIN</button>
+                    }
+                    <p class="text-center">Don't have an account? <a href="/account/register">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery   -->
+    <script src="~/Scripts/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="~/Scripts/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="~/Scripts/js/script.js"></script>
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+</body>
+</html>

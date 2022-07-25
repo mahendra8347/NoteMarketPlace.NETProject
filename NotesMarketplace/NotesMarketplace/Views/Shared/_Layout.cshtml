@@ -1,0 +1,248 @@
+﻿@using NotesMarketplace.Healpers
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!-- title -->
+    <title>Notes Marketplace</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/Content/Front/images/homepage/favicon.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="~/Content/Front/css/font-awesome/font-awesome.min.css">
+
+    <!-- Bootstrap Css    -->
+    <link rel="stylesheet" href="~/Content/Front/css/bootstrap/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/Content/Front/css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/Content/Front/css/responsive.css">
+
+    <script>
+        function fileValidation() {
+            var fileInput =
+                document.getElementById('DisplayPicture');
+
+            var filePath = fileInput.value;
+
+            // Allowing file type
+            var allowedExtensions =
+                /(\.jpg|\.jpeg|\.png)$/i;
+
+            if (!allowedExtensions.exec(filePath)) {
+                fileInput.value = '';
+                document.getElementById('DisplayPicture-error').innerHTML = "Select .png, .jpg or .jpeg file only";
+                document.getElementById('DisplayPicture').focus;
+                return false;
+            }
+        }
+
+        function ProfilePictureValidation() {
+            var fileInput =
+                document.getElementById('ProfilePicture');
+
+            var filePath = fileInput.value;
+
+            // Allowing file type
+            var allowedExtensions =
+                /(\.jpg|\.jpeg|\.png)$/i;
+
+            if (!allowedExtensions.exec(filePath)) {
+                fileInput.value = '';
+                document.getElementById('ProfilePicture-error').innerHTML = "Select .png, .jpg or .jpeg file only";
+                document.getElementById('ProfilePicture').focus;
+                return false;
+            }
+
+            //if (document.getElementById('ProfilePicture').files[0].size > 10240) {
+            //    fileInput.value = '';
+            //    document.getElementById('ProfilePicture-error').innerHTML = "File is Greater Then 10Mb, too Big !";
+            //    document.getElementById('ProfilePicture').focus;
+            //    return false;
+            //}
+
+        }
+
+        function fileValidationPreview() {
+            var fileInput =
+                document.getElementById('NotesPreview');
+
+            var filePath = fileInput.value;
+
+            // Allowing file type
+            var allowedExtensions =
+                /(\.pdf)$/i;
+
+            if (!allowedExtensions.exec(filePath)) {
+                fileInput.value = '';
+                document.getElementById('NotesPreview-error').innerHTML = "Select .pdf only";
+                document.getElementById('NotesPreview').focus;
+                return false;
+            }
+        }
+
+        function checkFileUploadExt(fieldObj) {
+            var control = document.getElementById("UploadNotes");
+            var filelength = control.files.length;
+
+            for (var i = 0; i < control.files.length; i++) {
+                var file = control.files[i];
+                var FileName = file.name;
+                var FileExt = FileName.substr(FileName.lastIndexOf('.') + 1);
+                if ((FileExt.toUpperCase() != "PDF")) {
+                    control.value = '';
+                    document.getElementById('UploadNotes-error').innerHTML = "Select .pdf only";
+                    document.getElementById('UploadNotes').focus;
+                    return false;
+                }
+            }
+        }
+
+        function searchFunction() {
+            document.getElementById("searchform").submit();
+        }
+
+        function logoutFunction() {
+            return confirm("Are you sure you wish logout?");
+        }
+
+    </script>
+
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap" class="contact-us-page">
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a class="navbar-brand" href="/user/index"><img src="~/Content/Front/images/homepage/logo.png" alt="logo"></a>
+                        }
+                        else
+                        {
+                            <a class="navbar-brand" href="/home/index"><img src="~/Content/Front/images/homepage/logo.png" alt="logo"></a>
+                        }
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class='nav-link' href="/home/searchnotes">
+                                        <span class="sr-only"></span>Search
+                                        Notes
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='nav-link' href="/user/index">Sell Your Notes</a>
+                                </li>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li class="nav-item">
+                                        <a class='nav-link' href="/User/BuyerRequests">Buyer Requests</a>
+                                    </li>
+                                }
+                                <li class="nav-item">
+                                    <a class='nav-link' href="/home/faq">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class='nav-link' href="/home/contact">Contact Us</a>
+                                </li>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li class="nav-item">
+                                        <div class="dropdown-profile">
+                                            <a class='dropbtn-profile nav-link'><img src="@TempData["ProfilePicture"]" alt="customer-image"></a>
+                                            @{
+                                                TempData.Keep("ProfilePicture");
+                                            }
+                                        <div class="dropdown-content-profile">
+                                            <a href="/User/UserProfile/">My Profile</a>
+                                            <a href="/User/MyDownloads">My Download</a>
+                                            <a href="/User/MySoldNotes">My Sold Notes</a>
+                                            <a href="/User/MyRejectedNotes">My Rejected Notes</a>
+                                            <a href="/Account/ChangePassword/">Change Password</a>
+                                            <a onclick="return confirm('Are you sure, you want to logout?')" href="/Account/Logout">logout</a>
+                                        </div>
+                                        </div>
+                                    </li>
+                                }
+
+                            </ul>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <div class="login-note-btn">
+                                    <button onclick="return confirm('Are you sure, you want to logout?')">@Html.ActionLink("Logout", "Logout", "Account")</button>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="login-note-btn">
+                                    <a href="/account/login"><button>Login</button></a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            @RenderBody()
+
+        </div>
+        <footer id="footer">
+            <!-- footer section -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div id="text-area" class="col-md-6">
+                            <p>Copyright <i class="fa fa-copyright"></i> TatvaSoft All rights reserved.</p>
+                        </div>
+                        <div id="icon-area" class="col-md-6">
+                            <ul class="social-list">
+                                <li><a target="_blank" href="@TempData["FacebookURL"]"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_blank" href="@TempData["TwitterURL"]"><i class="fa fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="@TempData["LinkedInURL"]"><i class="fa fa-linkedin"></i></a></li>
+                                @{
+                                    TempData.Keep("FacebookURL");
+                                    TempData.Keep("TwitterURL");
+                                    TempData.Keep("LinkedInURL");
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer section End -->
+        </footer>
+    </div>
+
+    <!-- Jquery   -->
+    <script src="~/Scripts/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="~/Scripts/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="~/Scripts/js/script.js"></script>
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+</body>
+</html>

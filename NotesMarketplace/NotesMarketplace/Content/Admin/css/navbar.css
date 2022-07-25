@@ -1,0 +1,212 @@
+/*==================================================
+                    Navbar
+==================================================*/
+/* mobile menu responsive - start */
+a.dropbtn-navbar.nav-link span {
+    display: none;
+}
+
+a.dropbtn-profile.nav-link span {
+    display: none;
+}
+
+/* mobile menu responsive - end */
+
+nav {
+    height: 80px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.bg-light {
+    z-index: 5000;
+    -webkit-box-shadow: 0px 0px 30px 0px rgb(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0, 0.08);
+    background: #fff;
+}
+
+li.nav-item {
+    font-family: "Open sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+    padding: 0px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: "Open sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+    padding: 15px 0px 0px 0px;
+}
+
+.navbar-light .navbar-nav.home-nav .nav-link {
+    padding: 0px 0px 0px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.navbar .login-note-btn {
+    padding: 10px 0px 0px 10px;
+}
+
+.navbar-light .home-nav.login-note-btn {
+    padding-top: 0px;
+}
+
+.navbar .login-note-btn button {
+    border-radius: 3px;
+    font-family: "Open sans";
+    font-size: 16px;
+    line-height: 22px;
+    width: 100px;
+    height: 30px;
+    background: #6255a5;
+    color: #fff;
+    border: none;
+}
+
+.navbar .login-note-btn button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    padding-bottom: 5px;
+    color: #6255a5;
+    border-bottom: 3px solid #6255a5;
+}
+
+.dropdown-profile.active {
+    border-bottom: 3px solid #6255a5;
+}
+
+.dropdown-navbar.active {
+    border-bottom: 3px solid #6255a5;
+}
+/*==================================================
+            Submenu of Profile
+==================================================*/
+.dropbtn-profile {
+    background-color: #fff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-profile {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-profile {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    left: -200%;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content-profile a {
+    font-family: "Open sans";
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-profile a:last-child {
+    color: #6255a5;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.dropdown-content-profile a:hover {
+    background: #6255a5;
+    color: #fff;
+}
+
+.dropdown-content-profile a:last-child:hover {
+    background: #6255a5;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-profile:hover .dropdown-content-profile {
+    display: block;
+}
+
+.dropdown-profile:hover .dropbtn-profile {
+    background-color: #fff;
+}
+
+/*==================================================
+            Submenu of navbar
+==================================================*/
+.dropbtn-navbar {
+    background-color: #fff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-navbar {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-navbar {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    margin-left: -100px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content-navbar a {
+    font-family: "Open sans";
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-navbar a:hover {
+    background: #6255a5;
+    color: #fff;
+}
+
+.dropdown-navbar:hover .dropdown-content-navbar {
+    display: block;
+}
+
+.dropdown-navbar:hover .dropbtn-navbar {
+    background-color: #fff;
+}

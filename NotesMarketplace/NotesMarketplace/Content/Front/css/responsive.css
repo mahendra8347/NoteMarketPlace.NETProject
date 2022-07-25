@@ -1,0 +1,1379 @@
+/*==================================================
+			Bootstrap 4.5 Media Queries        
+==================================================*/
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+	.container {
+		max-width: 1700px;
+	}
+}
+
+@media (min-width: 1301px) and (max-width: 1440px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.container {
+		max-width: 95%;
+	}
+
+	a.dropbtn-profile.nav-link.active {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.dropdown-profile:hover .dropdown-content-profile {
+		display: contents;
+	}
+
+	/* navbar */
+
+	.navbar-collapse ul {
+		margin: 10px 0px;
+		text-align: center;
+	}
+
+	.navbar-collapse li.nav-item {
+		margin: 5px;
+	}
+
+	.navbar-collapse .navbar-nav .nav-link {
+		font-family: "Open sans";
+		font-size: 20px;
+		line-height: 15px;
+	}
+
+		.navbar-collapse .navbar-nav .nav-link.active {
+			color: #6255a5;
+			border: 0px;
+		}
+
+	nav {
+		height: auto;
+	}
+
+	/* profile menu */
+	.dropdown-content-profile a {
+		font-size: 15px;
+		padding: 5px 25px;
+	}
+
+	/* top image with text */
+
+	.image-with-text {
+		height: 200px;
+	}
+
+		/* User Profile page */
+
+		.image-with-text h3 {
+			font-size: 40px
+		}
+
+	.detail-content-box {
+		margin-top: 35px;
+	}
+
+	.btn-general.btn-submit-form {
+		margin-bottom: 35px;
+	}
+
+	/* Thankyou Pop modal */
+
+	#thank-you-modal {
+		margin-top: 50px;
+	}
+
+	/* user home page */
+
+	#home #background-img {
+		height: 500px;
+	}
+
+	#home-content-inner {
+		padding-top: 180px;
+	}
+
+		#home-content-inner #home-heading h1 {
+			font-size: 40px;
+			line-height: 45px;
+		}
+
+		#home-content-inner #home-text p {
+			font-size: 18px;
+			line-height: 28px;
+		}
+
+	/* About */
+
+	.about-right p {
+		font-size: 15px;
+	}
+
+		.about-right p:first-child {
+			margin-bottom: 35px
+		}
+
+	/* Customer */
+
+	#customer .testimonial {
+		padding: 20px;
+		border-radius: 3px;
+	}
+
+		#customer .testimonial .author img {
+			width: 75px;
+			height: 75px;
+			margin-bottom: 15px;
+		}
+
+		#customer .testimonial .author .author-name-des h3 {
+			font-size: 20px;
+			line-height: 25px;
+			margin-bottom: 5px;
+		}
+
+		#customer .testimonial .author .author-name-des h5 {
+			font-size: 13px;
+			line-height: 25px;
+		}
+
+	/* Note derail page */
+
+	#note-detail .note-detail p {
+		margin-right: -40px
+	}
+
+	#note-detail #not-detail-right .title-value .rate {
+		margin-top: 0px;
+		margin-right: 0px;
+		padding-right: 0px;
+	}
+
+	#note-detail #not-detail-right .title-value .rate {
+		margin-left: -95px;
+		margin-top: -10px
+	}
+
+	.responsive-wrapper-padding-bottom-90pct {
+		padding-bottom: 150%;
+	}
+
+	/* search not page */
+
+	#notes-filter .search-notes {
+		height: 100%
+	}
+
+	.flex-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.container .col-md-2.select-seatch {
+		margin: 5px;
+		text-align: center;
+		line-height: 12px;
+		padding: 2px 0px;
+		flex: 0 0 29.33%;
+		min-width: 29.33%;
+	}
+
+
+
+	.select-seatch select {
+		flex: 0 0 33.33%;
+		min-width: 33.33%
+	}
+
+	.arrow-down {
+		position: absolute;
+		margin-left: -60px;
+		margin-top: 15px;
+	}
+
+	#display-notes .note-title h3 {
+		min-height: 150px;
+	}
+
+	/* user dashboard */
+	.progress-note-btn input {
+		-webkit-transform: translateX(-120px);
+		transform: translateX(-120px);
+	}
+
+	.progress-note-btn button {
+		-webkit-transform: translateY(-40px);
+		transform: translateY(-40px);
+	}
+
+	.progress-dashboard {
+		margin-bottom: -30px;
+	}
+
+	/* my download page, sold notes page, buyer request page, my rejected page */
+
+	/* general table in all above page */
+
+	.general-big-table .table thead th {
+		padding: 20px 3px;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	.general-big-table .table td {
+		padding: 20px 3px;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	.general-big-table .edit-action {
+		margin-right: 0px;
+		margin-bottom: 5px;
+	}
+
+	/* submenu for my down load page */
+	.my-download .dropdown-content {
+		margin-left: -170px;
+	}
+
+	/* submenu for sold note, rejected note and buyer request page  */
+	.sold-notes-menu .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+		margin-left: -125px;
+		-webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+		/* font of submenu for sold note, rejected note and request page */
+		.sold-notes-menu .dropdown-content a {
+			font-family: "Open sans";
+			font-weight: 500;
+			font-size: 14px;
+			color: #333333;
+			padding: 15px 15px;
+			text-decoration: none;
+			display: block;
+		}
+
+	.dropdown-content a {
+		font-size: 14px;
+	}
+
+	/* faq page */
+	.faq-inner {
+		margin: 30px 0px;
+	}
+}
+
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+
+@media (max-width: 767px) {
+
+	/* navbar */
+
+	a.dropbtn-profile.nav-link.active {
+		display: flex;
+	}
+
+	.dropdown-profile:hover .dropdown-content-profile {
+		display: contents;
+	}
+
+	.navbar-collapse ul {
+		margin: 10px 0px;
+	}
+
+	.navbar-collapse li.nav-item {
+		margin: 10px;
+	}
+
+	.navbar-collapse .navbar-nav .nav-link {
+		font-family: "Open sans";
+		font-size: 18px;
+		line-height: 15px;
+	}
+
+	.navbar-light .navbar-nav .nav-link.active {
+		padding-bottom: 0px;
+		border-bottom: 0px;
+	}
+
+	nav {
+		height: auto;
+	}
+
+	/* profile menu */
+
+	.dropdown-content-profile {
+		width: 150px;
+		left: -130%;
+	}
+
+		.dropdown-content-profile a {
+			font-size: 12px;
+			padding: 3px 20px;
+		}
+
+	/* General form (login, signup, forgot password, change password) */
+
+	.btn-general {
+		width: 375px;
+		height: 40px;
+		font-size: 15px;
+	}
+
+	#form-wrapper {
+		margin-top: 10px;
+		padding: 10px;
+	}
+
+		#form-wrapper h3 {
+			font-size: 25px;
+			margin-bottom: 5px;
+		}
+
+	.form-general form p {
+		margin-bottom: 20px;
+	}
+
+	#form-wrapper.form-general form p {
+		margin-top: 0px;
+		padding-top: 0px;
+		font-size: 15px;
+	}
+
+	.form-general form label {
+		font-size: 15px;
+		line-height: 15px;
+	}
+
+	.form-general form input {
+		margin-top: 5px;
+		font-size: 8px;
+		line-height: 15px;
+	}
+
+	.form-general form .form-group {
+		margin-bottom: 15px;
+	}
+
+	.form-general form .form-control {
+		width: 375px;
+		height: 40px;
+		font-size: 15px;
+	}
+
+	.form-general form .form-group a {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.form-general form .form-group img {
+		margin-top: -28px;
+	}
+
+	.form-general form small {
+		font-size: 12px;
+	}
+
+	.form-general form .input-group-prepend input {
+		width: 20px;
+		height: 20px;
+	}
+
+	.form-general form .input-group-text {
+		margin-top: 10px;
+	}
+
+	#form-wrapper p {
+		margin-top: 15px;
+		font-size: 15px;
+		line-height: 15px;
+	}
+
+	/* general (profile pages and forms)*/
+
+	.image-with-text {
+		height: 175px;
+	}
+
+		/* User Profile page */
+
+		.image-with-text h3 {
+			font-size: 35px;
+			line-height: 38px
+		}
+
+	.detail-content-box {
+		margin-top: 35px;
+	}
+
+	.footer #text-area {
+		margin: 0;
+		padding-top: 0px;
+		text-align-last: center;
+	}
+
+	.footer #icon-area {
+		margin: 0;
+		padding-top: 0px;
+		text-align-last: center;
+	}
+
+	/* Thankyou Pop modal */
+
+	#thank-you-modal {
+		margin-top: 50px;
+		padding-bottom: 100px;
+	}
+
+		#thank-you-modal .modal-content .modal-body .title h3 {
+			font-size: 22px;
+			line-height: 22px;
+		}
+
+		#thank-you-modal .modal-content .modal-body .detail h3 {
+			font-size: 16px;
+			line-height: 18px;
+		}
+
+		#thank-you-modal .modal-content .modal-body .detail p {
+			font-size: 13px;
+			line-height: 16px;
+		}
+
+	/* user home page */
+
+	#home #background-img {
+		height: 470px;
+	}
+
+	#home-content-inner {
+		padding-top: 170px;
+	}
+
+		#home-content-inner #home-heading h1 {
+			font-size: 35px;
+			line-height: 35px;
+			text-align: center;
+		}
+
+		#home-content-inner #home-text p {
+			font-size: 14px;
+			line-height: 25px;
+			text-align: center;
+		}
+
+		#home-content-inner #home-btn {
+			text-align: center;
+		}
+
+			#home-content-inner #home-btn .btn-home {
+				font-size: 18px;
+				line-height: 22px;
+			}
+
+	/* About */
+
+	#about-left .vertical-heading {
+		text-align: center;
+		min-height: 100px;
+	}
+
+	.about-right p {
+		font-size: 15px;
+		text-align: center;
+	}
+
+		.about-right p:first-child {
+			margin-bottom: 30px
+		}
+
+	/* Work */
+
+	#work .vertical-heading {
+		min-height: 75px;
+	}
+
+	#work #work-left {
+		margin-bottom: 30px;
+	}
+
+	#work .work-logo {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 20px;
+	}
+
+	#work .work-heading h3 {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	#work #work-left .work-button button {
+		height: 40px;
+	}
+
+	#work #work-right .work-button button {
+		height: 40px;
+	}
+
+	/* Customer */
+
+	#customer .testimonial {
+		padding: 20px;
+		border-radius: 3px;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+		#customer .testimonial .author img {
+			width: 75px;
+			height: 75px;
+			margin-bottom: 15px;
+		}
+
+		#customer .testimonial .author .author-name-des {
+			text-align: center;
+		}
+
+			#customer .testimonial .author .author-name-des h3 {
+				font-size: 20px;
+				line-height: 25px;
+				margin-bottom: 5px;
+			}
+
+			#customer .testimonial .author .author-name-des h5 {
+				font-size: 13px;
+				line-height: 25px;
+			}
+
+	#customer .first-row {
+		margin-bottom: 0px;
+	}
+
+	/* note detail page */
+
+	#note-detail .note-img img {
+		margin-bottom: 10px;
+	}
+
+	.notes-vertical-heading h3 {
+		text-align: center;
+		font-size: 35px;
+	}
+
+	.vertical-heading-sm h3 {
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#note-detail .note-title p {
+		font-size: 20px;
+	}
+
+	#note-detail .note-detail p {
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	#note-detail .download-btn button {
+		height: 35px;
+		margin-bottom: 15px;
+	}
+
+	#note-preview #testmonials {
+		text-align: center
+	}
+
+		#note-preview #testmonials .customer-img img {
+			height: 75px;
+			width: 75px;
+			margin-bottom: 10px;
+		}
+
+		#note-preview #testmonials .customer-nam-des {
+			margin-left: 0px;
+		}
+
+			#note-preview #testmonials .customer-nam-des h3 {
+				font-size: 18px;
+			}
+
+			#note-preview #testmonials .customer-nam-des .row {
+				margin: 5px 0px 0px 0px;
+			}
+
+				#note-preview #testmonials .customer-nam-des .row .rate {
+					margin-left: 175px;
+				}
+
+			#note-preview #testmonials .customer-nam-des p {
+				font-size: 15px;
+			}
+
+	#not-preview-right {
+		margin-top: 15px;
+	}
+
+	.responsive-wrapper-padding-bottom-90pct {
+		padding-bottom: 100%;
+	}
+
+	/* search not page */
+
+	#notes-filter .search-notes {
+		height: 100%;
+	}
+
+	.flex-container {
+		display: inline;
+	}
+
+	#display-notes .note-title h3 {
+		margin: 10px;
+	}
+
+	#display-notes .note-details {
+		margin: 0 10px;
+	}
+
+		#display-notes .note-details p {
+			font-size: 13px;
+			line-height: 10px;
+		}
+
+			#display-notes .note-details p span {
+				font-size: 12px;
+				line-height: 15px;
+			}
+
+	#display-notes .displatsinglenote {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	/* #display-notes .move-top-one {
+		margin-top: -485px
+	}
+
+	#display-notes .move-top-two {
+		margin-top: -975px
+	}
+
+	#display-notes .move-top-three {
+		-webkit-transform: translateX(270px);
+		transform: translateX(270px);
+		margin-top: -945px;
+	}*/
+	#display-notes .margin-top {
+		margin-top: 30px
+	}
+
+	#display-notes .note-title h3 {
+		min-height: 100px;
+	}
+
+	/* user dash board */
+	.user-data .flex-container {
+		display: inline;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+		.user-data .flex-container > div {
+			border: 1px solid #d1d1d1;
+			margin: 0px 0px 0px 0px;
+			text-align: center;
+			border-radius: 2px;
+			padding: 10px;
+		}
+
+	.user-data #num-of-notes {
+		margin-left: -0px;
+		border-right: 1px solid #d1d1d1;
+	}
+
+	.user-data #money-ern {
+		border-left: 1px solid #d1d1d1;
+		margin-left: 0px;
+	}
+
+	.user-data #requests {
+		margin-right: 0px;
+	}
+
+	.user-data #dash-title {
+		margin-left: 0px;
+		padding-right: 0px;
+	}
+
+	.progress-dashboard .vertical-heading-sm {
+		margin-bottom: 15px;
+	}
+
+	/* my download page, sold notes page, buyer request page, my rejected page */
+
+	/* general table in all above page */
+
+	.general-top-bar .vertical-heading h3 {
+		text-align: center;
+		font-size: 25px;
+		margin-left: 0px;
+	}
+
+	.general-top-bar .progress-note-btn {
+		text-align: center;
+		margin-right: 0px;
+		margin-top: 0px;
+	}
+
+		.general-top-bar .progress-note-btn .search-enter-progress {
+			width: 350px;
+		}
+
+	.progress-table.general-big-table {
+		border: none;
+	}
+
+	.general-big-table .table {
+		border: none;
+		border: 1px solid #d1d1d1;
+	}
+
+	.faq-inner {
+		margin: 30px 0px;
+	}
+}
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 575px) {
+
+	/* navbar */
+
+	.navbar-collapse ul {
+		margin: 10px 0px;
+	}
+
+	.navbar-collapse .navbar-nav .nav-link {
+		font-family: "Open sans";
+		font-size: 18px;
+	}
+
+	.dropdown-content-profile {
+		width: 150px;
+		left: -130%;
+	}
+
+		.dropdown-content-profile a {
+			font-size: 12px;
+			padding: 3px 20px;
+		}
+
+	/* note detail page */
+
+	#note-detail #not-detail-right {
+		margin-top: 15px;
+	}
+
+		#note-detail #not-detail-right .title-value .rate {
+			margin-top: -12px;
+			margin-left: 350px;
+			padding-right: 0px;
+		}
+
+	/* search not page */
+
+	#display-notes .note-title h3 {
+		margin: 10px;
+	}
+
+	#display-notes .note-details {
+		margin: 0 10px;
+	}
+
+		#display-notes .note-details p {
+			font-size: 15px;
+			line-height: 10px;
+		}
+
+			#display-notes .note-details p span {
+				font-size: 15px;
+				line-height: 15px;
+			}
+
+	/*#display-notes .move-top-one,
+	#display-notes .move-top-two {
+		margin-top: 0px
+	}
+
+	#display-notes .move-top-three {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+		margin-top: 0px;
+	}*/
+
+	#display-notes .margin-top-two {
+		margin-top: 30px
+	}
+
+	#display-notes .note-title h3 {
+		min-height: auto;
+	}
+
+	/* user dash board */
+
+	.dashboard-top button {
+		-webkit-transform: translateY(-40px);
+		transform: translateY(-40px);
+	}
+
+	.dashboard-top {
+		margin-bottom: -35px;
+	}
+
+	.progress-table {
+		border: none;
+	}
+
+	.table {
+		border: 1px solid #d1d1d1;
+	}
+
+		.table td a img {
+			height: 20px;
+			width: 20px;
+		}
+
+	/* my download page, sold notes page, buyer request page, my rejected page */
+
+	/* general table in all above page */
+
+	.general-top-bar .vertical-heading h3 {
+		text-align: center;
+		font-size: 25px;
+		margin-left: 0px;
+	}
+
+	.general-top-bar .progress-note-btn {
+		text-align: center;
+		margin-right: 0px;
+		margin-top: 0px;
+	}
+
+		.general-top-bar .progress-note-btn .search-enter-progress {
+			width: 390px;
+		}
+
+	.progress-table.general-big-table {
+		border: none;
+	}
+
+	.general-big-table .table {
+		margin-left: 0px;
+		border: none;
+		border: 1px solid #d1d1d1;
+	}
+
+	#add-notes-form .margin-top {
+		margin-top: 15px;
+	}
+
+	.question-toggle {
+		font-size: 15px;
+	}
+
+	.faq-inner {
+		margin: 20px 0px;
+	}
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 480px) {
+
+	/* navbar */
+
+	/* navbar logo */
+	.navbar .navbar-brand img {
+		width: 180px;
+	}
+
+	/* General */
+
+	.btn-general {
+		width: 325px;
+		height: 30px;
+		font-size: 12px;
+	}
+
+	#form-wrapper {
+		margin-top: 10px;
+		padding: 10px;
+	}
+
+		#form-wrapper h3 {
+			font-size: 22px;
+			margin-bottom: 5px;
+		}
+
+	.form-general form p {
+		margin-bottom: 15px;
+	}
+
+	#form-wrapper.form-general form p {
+		margin-top: 0px;
+		padding-top: 0px;
+		font-size: 12px;
+	}
+
+	.form-general form label {
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+	.form-general form input {
+		margin-top: 3px;
+		font-size: 8px;
+		line-height: 10px;
+	}
+
+	.form-general form .form-group {
+		margin-bottom: 10px;
+	}
+
+	.form-general form .form-control {
+		width: 325px;
+		height: 30px;
+		font-size: 12px;
+	}
+
+	.form-general form .form-group a {
+		font-size: 12px;
+		line-height: 25px;
+	}
+
+	.form-general form .form-group img {
+		margin-top: -22px;
+	}
+
+	.form-general form small {
+		font-size: 10px;
+	}
+
+	.form-general form .input-group-prepend input {
+		width: 15px;
+		height: 15px;
+	}
+
+	.form-general form .input-group-text {
+		margin-top: 5px;
+	}
+
+	#form-wrapper p {
+		margin-top: 10px;
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+	/* general (profile pages and forms)*/
+
+	.image-with-text {
+		height: 170px;
+	}
+
+		/* User Profile page */
+
+		.image-with-text h3 {
+			font-size: 32px;
+			line-height: 35px
+		}
+
+	.last-row-small {
+		margin-bottom: 15px;
+	}
+
+	.phone-number-input {
+		margin-top: 10px;
+	}
+
+	/* Thankyou Pop modal */
+
+	#thank-you-modal {
+		margin-top: 40px;
+		padding-bottom: 100px;
+	}
+
+		#thank-you-modal .modal-content .modal-body .title h3 {
+			font-size: 25px;
+			line-height: 22px;
+		}
+
+		#thank-you-modal .modal-content .modal-body .detail h3 {
+			font-size: 18px;
+			line-height: 18px;
+		}
+
+		#thank-you-modal .modal-content .modal-body .detail p {
+			font-size: 15px;
+			line-height: 16px;
+		}
+
+	/* user home page */
+
+	#home #background-img {
+		height: 470px;
+	}
+
+	#home-content-inner {
+		padding-top: 170px;
+	}
+
+		#home-content-inner #home-heading h1 {
+			font-size: 33px;
+			line-height: 33px;
+		}
+
+		#home-content-inner #home-btn .btn-home {
+			font-size: 16px;
+		}
+
+	/* About */
+
+	.vertical-heading h3 {
+		font-size: 30px;
+	}
+
+	.about-right p:first-child {
+		margin-bottom: 20px
+	}
+
+	/* Work */
+
+	#work .vertical-heading {
+		min-height: 60px;
+	}
+
+	/* Customer */
+
+	#customer .testimonial {
+		text-align: center;
+		height: auto;
+	}
+
+		#customer .testimonial .author .author-name-des {
+			text-align: center;
+		}
+
+		#customer .testimonial .author img {
+			margin-bottom: 5px;
+		}
+
+		#customer .testimonial .author .author-name-des {
+			margin-top: 0px;
+		}
+
+	/* note detail page */
+
+	#note-detail #not-detail-right {
+		margin-top: 15px;
+	}
+
+		#note-detail #not-detail-right .title-value .rate {
+			margin-top: -12px;
+			margin-left: 250px;
+			padding-right: 0px;
+		}
+
+	#note-preview #testmonials .customer-nam-des .row .rate {
+		margin-left: 135px;
+	}
+
+	/* user dashboard */
+	.search-enter-progress {
+		width: 160px
+	}
+
+	/* my download page, sold notes page, buyer request page, my rejected page */
+
+	/* general table in all above page */
+
+	.general-top-bar .vertical-heading h3 {
+		text-align: center;
+		font-size: 22px;
+		margin-left: 0px;
+	}
+
+	.general-top-bar .progress-note-btn {
+		text-align: center;
+		margin-right: 0px;
+		margin-top: 0px;
+	}
+
+		.general-top-bar .progress-note-btn button {
+			height: 30px;
+		}
+
+		.general-top-bar .progress-note-btn .search-enter-progress {
+			width: 150px;
+			height: 30px;
+		}
+
+	.general-big-table .table {
+		margin-left: 0px;
+	}
+
+		.general-big-table .table td a img {
+			height: 12px;
+			width: 12px;
+		}
+
+	/* submenu for my down load page */
+	.my-download .dropdown-content {
+		margin-left: -131px;
+	}
+
+	/* submenu for sold note, rejected note and buyer request page  */
+	.sold-notes-menu .dropdown-content {
+		margin-left: -112px;
+	}
+
+		/* font of submenu for sold note, rejected note and request page */
+		.sold-notes-menu .dropdown-content a {
+			font-size: 12px;
+		}
+
+	.dropdown-content a {
+		font-size: 10px;
+	}
+
+	.vertical-heading-sm h3 {
+		font-size: 23px;
+	}
+
+	.question-toggle {
+		font-size: 14px;
+	}
+
+	/* email page */
+
+	#email-form form h3 {
+		font-size: 23px;
+	}
+
+	#email-form img {
+		width: 200px;
+		margin-bottom: 30px;
+	}
+
+	#email-form #user-name {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+
+	#email-form #p1,
+	#email-form #p2 {
+		font-size: 14px;
+		line-height: 15px
+	}
+
+	#email-form .btn-general {
+		width: 200px
+	}
+}
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 320px) {
+
+	/* General */
+
+	.btn-general {
+		width: 270px;
+		height: 25px;
+		font-size: 11px;
+	}
+
+	#form-wrapper {
+		margin-top: 10px;
+		padding: 10px;
+	}
+
+		#form-wrapper h3 {
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+
+	.form-general form p {
+		margin-bottom: 12px;
+	}
+
+	#form-wrapper.form-general form p {
+		font-size: 11px;
+	}
+
+	.form-general form label {
+		font-size: 11px;
+		line-height: 11px;
+	}
+
+	.form-general form input {
+		font-size: 11px;
+		line-height: 10px;
+	}
+
+	.form-general form .form-group {
+		margin-bottom: 10px;
+	}
+
+	.form-general form .form-control {
+		width: 270px;
+		height: 25px;
+		font-size: 11px;
+	}
+
+	.form-general form .form-group a {
+		font-size: 11px;
+		line-height: 27px;
+	}
+
+	.form-general form .form-group img {
+		margin-top: -20px;
+	}
+
+	.form-general form small {
+		font-size: 10px;
+	}
+
+	.form-general form .input-group-prepend input {
+		width: 14px;
+		height: 14px;
+	}
+
+	.form-general form .input-group-text {
+		margin-top: 0px;
+	}
+
+	#form-wrapper p {
+		margin-top: 8px;
+		font-size: 11px;
+		line-height: 11px;
+	}
+
+	/* general (profile pages and forms)*/
+
+	.image-with-text {
+		height: 170px;
+	}
+
+		/* User Profile page */
+
+		.image-with-text h3 {
+			font-size: 25px
+		}
+
+	.detail-content-box h3 {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	/* Thankyou Pop modal */
+
+	#thank-you-modal {
+		margin-top: 40px;
+		padding-bottom: 100px;
+	}
+
+		#thank-you-modal .modal-content .modal-body .title h3 {
+			font-size: 20px;
+			line-height: 22px;
+		}
+
+		#thank-you-modal .modal-content .modal-body .detail h3 {
+			font-size: 15px;
+			line-height: 18px;
+		}
+
+		#thank-you-modal .modal-content .modal-body .detail p {
+			font-size: 12px;
+			line-height: 15px;
+		}
+
+	/* user home page */
+
+	#home-content-inner #home-heading h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	#home-content-inner #home-btn .btn-home {
+		font-size: 15px;
+	}
+
+	/* About */
+
+	.vertical-heading h3 {
+		font-size: 25px;
+	}
+
+	/* Customer */
+
+	#customer .testimonial {
+		height: auto;
+	}
+
+		#customer .testimonial .author .author-name-des {
+			text-align: center;
+		}
+
+	/* note detail page */
+
+	#note-detail #not-detail-right .title-value .rate {
+		margin-top: -12px;
+		margin-left: 97px;
+	}
+
+	#note-preview #testmonials .customer-nam-des .row .rate {
+		margin-left: 45px;
+	}
+
+	/* user dashboard */
+	.search-enter-progress {
+		width: 160px
+	}
+
+	/* my download page, sold notes page, buyer request page, my rejected page */
+
+	/* general table in all above page */
+
+	.general-big-table .table {
+		margin-left: 0px;
+	}
+}

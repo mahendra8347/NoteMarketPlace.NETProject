@@ -1,0 +1,65 @@
+﻿@model NotesMarketplace.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0 ,user-scalable=no">
+
+    <!-- title -->
+    <title>Notes Marketplace</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/Content/Front/images/homepage/favicon.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="~/Content/Front/css/font-awesome/font-awesome.min.css">
+    <!-- Bootstrap Css    -->
+    <link rel="stylesheet" href="~/Content/Front/css/bootstrap/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/Content/Front/css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/Content/Front/css/responsive.css">
+
+</head>
+<body>
+    <div class="main-page">
+        <div class="container-box">
+            <div class="form-warp">
+                <div id="email-form">
+                    <div id="site-logo" style="color:green">
+                        <img src="~/Content/Front/images/Login/top-logo_2.png" class="img-responsive" alt="top-logo">
+                    </div>
+                    <h3>Email Verification</h3>
+                    <p id="user-name">Dear, @TempData["userName"]</p>
+                    <p id="p1">Thanks for Signing UP!</p>
+                    <p id="p2">Please verify the email address via clicking on the link we sent you via email.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery   -->
+    <script src="~/Scripts/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="~/Scripts/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="~/Scripts/js/script.js"></script>
+
+</body>
+</html>
